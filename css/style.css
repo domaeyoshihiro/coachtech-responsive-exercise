@@ -1,0 +1,280 @@
+header {
+  background-image: url("../img/firstview.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 480px) {
+header {
+  background-image: url("../img/firstview-sp.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+}
+
+.header__nav {
+  display:flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: auto;
+  color: #fff;
+  font-family: 'Shippori Mincho', serif;
+}
+
+.header__logo {
+  padding: 15px;
+  font-size: 24px;
+}
+
+.header__nav-list {
+  display: flex;
+  padding-top: 20px;
+
+  font-family: 'Shippori Mincho', serif;
+}
+
+.humburger__svg {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header__nav-list {
+    display: none;
+  }
+    .humburger__svg {
+      display: block;
+    }
+}
+
+li {
+  list-style: none;
+}
+
+.header__nav-list-link {
+  color: #fff;
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+.firstview__relative {
+  position: relative;
+  color: #fff;
+  height: 600px;
+  width: 100%;
+}
+
+.firstview {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+}
+
+.firstview__title {
+  font-size: 60px;
+  padding-bottom: 20px;
+  font-family: 'Shippori Mincho', serif;
+}
+
+.firstview__text {
+  font-size: 22px;
+  margin-left: 15px;
+  font-family: 'Shippori Mincho', serif;
+}
+
+/*ここからcard*/
+.flex__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__item {
+  position: relative;
+  width: 50%;
+  height: 300px;
+  display: block;
+}
+
+.card__item--first {
+  background: url(../img/topics-img1.png) no-repeat;
+  background-size: cover;
+}
+
+.card__item--second {
+  background: url(../img/topics-img2.png) no-repeat;
+  background-size: cover;
+}
+
+.card__item--third {
+  background: url(../img/topics-img3.png) no-repeat;
+  background-size: cover;
+}
+
+.card__item-ttl {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  color: #fff;
+  font-size: 26px;
+  font-family: 'Shippori Mincho', serif;
+}
+
+@media screen and (max-width: 768px) {
+  .card__item-ttl {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Shippori Mincho', serif;
+  }
+  .card__item-txt {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+.flex__item {
+    display: block;
+  }
+
+  .card__item {
+    position: relative;
+    width: 100%;
+    display: block;
+  }
+
+  .card__item-ttl {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Shippori Mincho', serif;
+}
+
+.card__item-txt {
+    display: none;
+  }
+}
+
+.card__item-txt {
+  position: absolute;
+  top: 65%;
+  left: 5%;
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Shippori Mincho', serif;
+}
+
+
+/*ここからwrap*/
+.wrap {
+  background: linear-gradient(#000000, #FFFFFF);
+}
+
+.wrap__img {
+  column-count: 3;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .wrap__img {
+    column-count: 2;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.wrap__item img {
+  width: 80%;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.wrap__ttl {
+  color: #fff;
+  font-size: 40px;
+  font-family: 'Shippori Mincho', serif;
+  padding-top: 40px;
+  padding-left: 45px;
+  padding-bottom: 20px;
+}
+
+/*ここからabout*/
+.about {
+  display: flex;
+  background-color: #000000;
+}
+
+.about__img {
+  width: 40%;
+  margin: 40px;
+}
+
+.about__content {
+  margin-top: 150px;
+  margin-right: 40px;
+  color: #fff;
+  font-family: 'Shippori Mincho', serif;
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    display: block;
+    background-color: #000000;
+  }
+
+  .about__img {
+    width: 80%;
+    margin: 40px;
+  }
+
+  .about__content {
+    margin: 0 20px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Shippori Mincho', serif;
+  }
+}
+
+.about__ttl-sub {
+  padding-bottom: 20px;
+}
+
+.about__ttl {
+  font-size: 30px;
+  padding-bottom: 30px;
+  line-height: 50px;
+}
+
+.about__txt {
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+
+.about__txt-2 {
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+
+.about__btn {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background-color: #000000;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 20px;
+}
+
+/*ここからfooter*/
+.footer {
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+  background: #000000;
+  color: #fff;
+  font-family: 'Shippori Mincho', serif;
+}
